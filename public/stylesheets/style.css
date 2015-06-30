@@ -1,0 +1,68 @@
+body {
+  padding-top: 30px;
+}
+.cell {
+  height: 25px;
+  width: 25px;
+  border-right: 1px solid #000;
+  border-bottom: 1px solid #000;
+  padding-left: 15px;
+  padding-top: 10px;
+  padding-bottom: 4px;
+  float: left;
+  color: #000;
+  transition: color 0.5s linear 0.1s, background-color 0.2s linear;
+  cursor: pointer;
+}
+.cell:hover {
+  background-color: #efefef;
+}
+.cell:active {
+  background-color: #c5c5c5;
+}
+.sudokuTable {
+  border: 1px solid #000;
+  display: block;
+  width: 370px;
+  height: 361px;
+  margin: 0 auto;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  cursor: default;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.row3,
+.row6 {
+  border-bottom: 2px solid #000;
+}
+.col3,
+.col6 {
+  border-right: 2px solid #000;
+}
+.col9 {
+  border-right: 0;
+  clear: right;
+}
+.row9 {
+  border-bottom: 0;
+}
+h1 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.description {
+  width: 500px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+@media print {
+  .noprint,
+  .noprint * {
+    display: none !important;
+  }
+}

@@ -1,0 +1,8 @@
+extends layout
+
+block sudokuBlock
+  each sudokuTable in sudoku
+    .sudokuTable
+      each row, rIndex in sudokuTable
+        each cell, cIndex in row
+          div(class="cell col#{cIndex%9+1} row#{rIndex+1} block#{''+parseInt((cIndex+3)/3)+parseInt((rIndex+3)/3)}")= cell
